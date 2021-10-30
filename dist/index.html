@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><h1><a href="" id="inbox">ToDo List</a></h1></div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="" id="inbox">Inbox</a></li>
+            <li><a id="today">ToDay</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="content">
+      <div class="toDo-list">
+        <div class="forms">
+          <form action="">
+            <input
+              type="text"
+              name="nameOfTask"
+              id="nameTask"
+              size="30"
+              placeholder="Name of Task"
+            />
+            <input type="date" name="" id="dateTask" />
+            <button type="button" id="add">+</button>
+          </form>
+        </div>
+      </div>
+      <div class="list">
+        <div class="task">
+          <div class="check" id="checkTask"></div>
+          <h3 class="faile">Estudar Js</h3>
+          <h3>10/12/2021</h3>         
+        </div>
+        <div class="task">
+          <div class="check-done"></div>
+          <h3>Estudar Js</h3>
+          <h3>10/12/2021</h3>         
+        </div>
+        <div class="check"></div>
+      </div>
+    </section>
+  </body>
+</html>

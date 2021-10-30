@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "myFont";
+  src: url("./font/EBGaramond-VariableFont_wght.ttf");
+}
+h1 {
+  font-size: 30px;
+  font-family: "myFont";
+}
+h3 {
+  font-size: 20px;
+  font-family: "myFont";
+  text-align: center;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    hsl(200, 100%, 50%),
+    hsl(175, 100%, 50%)
+  );
+}
+header {
+  background-color: black;
+  color: aliceblue;
+  height: 50px;
+  display: flex;
+}
+.logo {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-weight: 600;
+}
+.content {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header nav ul {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  color: aliceblue;
+}
+.toDo-list,
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forms {
+  padding: 10px;
+  margin-top: 100px;
+  background-color: black;
+  color: aliceblue;
+  height: 40px;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input,
+button {
+  border: none;
+  border-radius: 7px;
+}
+input {
+  font-size: 13px;
+}
+input#nameTask {
+  width: 200px;
+  height: 30px;
+}
+input#dateTask {
+  width: 125px;
+  height: 30px;
+}
+#add {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  font-family: 30px;
+}
+.task {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 40px 210px 100px;
+  grid-template-rows: 40px;
+  padding-top: 5px;
+  border-bottom: solid 1px black;
+}
+.faile{
+  text-decoration: line-through;
+}
+.list {
+  margin-top: 20px;
+  flex-direction: column;
+  border-radius: 11px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 400px;
+}
+.check {
+  background-image: url(./icon/ic_crop_3_2_black_36dp.png);
+  background-size: cover;
+}
+.check-done {
+  background-image: url(./icon/ic_check_circle_black_36dp.png);
+  background-size: cover;
+}
+.remove {
+  background-image: url(./icon/ic_highlight_off_black_36dp.png);
+  background-size: cover;
+}

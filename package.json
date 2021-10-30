@@ -1,0 +1,29 @@
+{
+  "name": "ToDo-List",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarioPrazeres/ToDo-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarioPrazeres/ToDo-List/issues"
+  },
+  "homepage": "https://github.com/DarioPrazeres/ToDo-List#readme",
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "eslint-config-google": "^0.14.0",
+    "prettier": "2.4.1",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
