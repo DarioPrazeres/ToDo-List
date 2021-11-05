@@ -6,7 +6,7 @@ const listTask = document.querySelector("div.list");
 const todayButton = document.querySelector("a#today");
 const forms = document.querySelector('div.forms');
 
-const dayToday = new Date();
+
 const myWayDate = new MyDate(); 
 const hw = [];
 
@@ -49,8 +49,7 @@ function item_0(pos) {
     } else {
       hw[pos].setStatus(false);
       check.innerHTML = "";
-      check.classList.add("check");
-       
+      check.classList.add("check");       
     }
   };
   return check;
@@ -58,7 +57,6 @@ function item_0(pos) {
 function item_1(nameTask) {
   const name = document.createElement("h3");
   name.innerHTML = nameTask;
-
   return name;
 }
 function item_2(dateTask) {
@@ -69,12 +67,10 @@ function item_2(dateTask) {
 
 function putItOnList(item0, item1, item2) {
   const task = document.createElement("div");
-  //stylist
   task.classList.add("task");
   task.appendChild(item0);
   task.appendChild(item1);
   task.appendChild(item2);
-
   return task;
 }
 
@@ -102,46 +98,4 @@ function allTask(){
     addListChild(hw[i].getName(), hw[i].getDate(), i);
   }
 }
-console.log('Dario Prazeres');
  allTask();
-/*function checkItem(status){    
-    const check = document.createElement('div'); 
-    check.addEventListener('click', changeCheck(status));
-
-    if(status === false){
-        check.classList.add('check'); 
-    }else{
-        check.classList.add('check-done'); 
-    }
-
-    return check;
-}
-function changeCheck(status){
-    if(status === false){
-       return status; 
-    }else{
-       return status;
-    }
-}*/
- //console.log(dayToday.getDate());
-  /*for(let i = 0; i <= hw.length-1; i++){
-    const name = hw[i].getName();
-    const date = hw[i].getDate();
-    listTask.appendChild(putItOnList(item_0(position), item_1(name), item_2(date), item_3()));
-    console.log('i am number');
-    console.log(i);
-    //console.log(hw[i].date);
-    console.log(dayOfWeek);
-    var dateFull = hw[i].date;
-    var lineCol = dateFull.split('-');
-    var diaTask = Number.parseInt(lineCol[2]);
-    var mouthTask = Number.parseInt(lineCol[1]);
-    var yearTask = Number.parseInt(lineCol[0]);
-    //console.log(mouthTask);
-    //console.log(yearTask);
-    //console.log(diaTask);
-    //console.log('mouth and day');
-    
-    //console.log(date.getUTCMonth()+1);
-    
-  }*/
