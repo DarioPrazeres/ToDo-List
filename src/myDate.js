@@ -3,10 +3,7 @@ export default class MyDate {
         this.date = new Date();
     }
     compareDay(string){
-        //var lineCol = string.split('-');
         var dia = this.dateString(2, string);
-        //var mouthTask = Number.parseInt(lineCol[1]);
-        //var yearTask = Number.parseInt(lineCol[0]);
         return dia;
     }
     compareMouth(string){
