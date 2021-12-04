@@ -1,14 +1,12 @@
-@font-face {
-  font-family: "myFont";
-  src: url("./font/EBGaramond-VariableFont_wght.ttf");
+*{
+  box-sizing: border-box;
 }
+
 h1 {
   font-size: 30px;
-  font-family: "myFont";
 }
 h3 {
-  font-size: 20px;
-  font-family: "myFont";
+  font-size: 16px;
   text-align: center;
 }
 body {
@@ -19,12 +17,17 @@ body {
     hsl(200, 100%, 50%),
     hsl(175, 100%, 50%)
   );
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 100%;
 }
 header {
   background-color: black;
   color: aliceblue;
-  height: 50px;
+  height: 70px;
   display: flex;
+  width: 100%;
+  justify-content: baseline;
+  align-items: center;
 }
 .logo {
   padding-top: 10px;
@@ -37,11 +40,14 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 5px;
+  width: 90%;
 }
 header nav ul {
   display: flex;
   padding-top: 20px;
   padding-left: 5px;
+  list-style-type: none;
 }
 a {
   text-decoration: none;
@@ -49,27 +55,38 @@ a {
   padding: 5px;
   color: aliceblue;
 }
+nav{
+  width: 100%;
+  padding: 5px;
+  margin-left: 10%; 
+}
 .toDo-list,
 .list {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
-.forms {
+.forms{
+  width: 100%;
+}
+form {
+  width: 100%;
   padding: 10px;
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: black;
   color: aliceblue;
-  height: 40px;
+  
   border-radius: 11px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  
 }
 input,
 button {
   border: none;
   border-radius: 7px;
+  margin-left: 2px;
 }
 input {
   font-size: 13px;
@@ -86,7 +103,7 @@ input#dateTask {
   background-color: white;
   height: 30px;
   width: 30px;
-  font-family: 30px;
+  font-family: 40px;
 }
 .task {
   display: grid;
@@ -94,11 +111,10 @@ input#dateTask {
   grid-template-columns: 40px 210px 100px;
   grid-template-rows: 40px;
   padding-top: 5px;
-  border-bottom: solid 1px black;
+  padding: 5px;
+  
 }
-.faile{
-  text-decoration: line-through;
-}
+
 .list {
   margin-top: 20px;
   flex-direction: column;
@@ -106,16 +122,82 @@ input#dateTask {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 400px;
+
 }
 .check {
   background-image: url(./icon/ic_crop_3_2_black_36dp.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 .check-done {
   background-image: url(./icon/ic_check_circle_black_36dp.png);
-  background-size: cover;
+  background-size: contain;
 }
 .remove {
   background-image: url(./icon/ic_highlight_off_black_36dp.png);
   background-size: cover;
+  
 }
+.textTask{
+  text-align: center;
+  padding: 10px;
+}
+footer{
+  width: 100%;
+  padding: 5px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+}
+@media only screen and (max-width: 768px){
+  body {
+    padding: 0;
+    margin: 0;
+    background: blue;
+  }
+  header{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+    margin: 0;
+  }
+  .list{
+    width: 90%;
+  }
+  .task {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 40px 10rem 20%;
+    grid-template-rows: 70px;  
+    
+  }
+  form {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  input,#add{  
+  margin-top: 5px;
+}
+ #add{
+   width: 50px;
+ } 
+}
+
