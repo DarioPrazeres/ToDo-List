@@ -28,9 +28,7 @@ function showData() {
   }else{
     const toDo = new Task(inputName.value, inputDate.value);
     hw.push(toDo);
-    console.log(hw.length);
-    addListChild(hw[position].getName(), hw[position].getDate(), position);
-    
+    addListChild(hw[position].getName(), hw[position].getDate(), position);    
     position++;
   }
 }
@@ -77,15 +75,9 @@ function putItOnList(item0, item1, item2) {
 todayButton.onclick = function(){
   listTask.innerHTML = '';
   forms.style.display = 'none';
-  console.log(myWayDate.date.getDate());
   for(let i = 0; i < hw.length; i++){
-    console.log(i);
     if(myWayDate.date.getDate() == myWayDate.compareDay(hw[i].getDate())){
-      console.log('position');
-      console.log(i);
-      console.log(i);
       if(hw[i].getStatus() == false){
-        console.log(hw[i].getStatus());
         addListChild(hw[i].getName(), hw[i].getDate(), i);
       }
       
