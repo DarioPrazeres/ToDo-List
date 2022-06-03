@@ -72,6 +72,7 @@ This application was created as a submission to a [The Odin Project](https://the
 - [HTML](https://html.com/) 
 - [CSS](https://html.com/css/)
 - [NPM](https://npmjs.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - [WebPack](https://webpack.js.org/)
 - A code editor as:[VS code](https://code.visualstudio.com/)
 
@@ -91,5 +92,5 @@ This application was created as a submission to a [The Odin Project](https://the
 
 ## Contact
 
-- GitHub [@DarioPrazeres](https://github.com/DarioPrazeres})
+- GitHub [@DarioPrazeres](https://github.com/DarioPrazeres)
 - Twitter [@dario_prazeres](https://twitter.com/dario_prazeres)
