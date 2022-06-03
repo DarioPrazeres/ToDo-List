@@ -1,7 +1,5 @@
 # ToDo-List
 
-https://darioprazeres.github.io/ToDo-List/
-
 
 <!-- Please update value in the {}  -->
 
